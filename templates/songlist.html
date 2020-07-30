@@ -1,0 +1,27 @@
+<!-- <html>
+    <head>
+        <title>MUSIC!</title>
+    </head>
+    <body>
+      <h1>MUSIC</h1>
+
+    {{events}}
+
+
+    </body>
+</html>
+<html> -->
+    <head>
+        <title>Community Events Board</title>
+    </head>
+    <body>
+      <h1>Community Events Board</h1>
+      <div class="event-list">
+        <ul>
+          {% for event in events %}
+            <li>{{ event.name }}- {{event.song}} -{{event.Description}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </body>
+</html>
